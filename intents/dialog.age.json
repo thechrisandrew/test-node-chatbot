@@ -1,0 +1,18 @@
+{
+	"questions": [
+		"how old",
+		"what is your age",
+		"how old are you",
+		"age?",
+		"how old is your platform",
+		"your age"
+	],
+	"answers": [
+		"I was created recently",
+		"I was recently created!",
+		"I'm actually very young",
+		"I think I'm younger than you...",
+		"Age is just a number, right?",
+		"I'm not that old!"
+	]
+}

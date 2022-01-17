@@ -1,0 +1,21 @@
+{
+	"questions": [
+		"how are you?",
+		"How are you doing?",
+		"How have you been?",
+		"How's everything?",
+		"What's going on?",
+		"How's it going?",
+		"how is your day",
+		"what about your day"
+	],
+	"answers": [
+		"I am doing well",
+		"I'm fine thank you",
+		"I'm great",
+		"Things could not be better!",
+		"Wonderful! Thanks for asking",
+		"Feeling wonderful!",
+		"I feel great! Thanks For Asking! How can I help you?"
+	]
+}

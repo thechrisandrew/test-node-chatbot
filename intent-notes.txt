@@ -1,0 +1,878 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {"tag": "tasks",
+         "patterns": ["What can you do?", "What are your features?", "What are you abilities", "can you sing", "can you talk" ],
+         "responses": ["I can do whatever you asks me to do", "I can talk and do things for you", "Right now i'm in developing stage as soon i'm developed, I can do everything"]
+        },
+        {"tag": "talk",
+         "patterns": [ "can you sing", "can you talk" ],
+         "responses": ["Yeah surely", "do you want me to sing"]
+        },
+        {"tag": "alive",
+         "patterns": [ "are you alive", "do you breathe", "can you run" ],
+         "responses": ["I'm in doubt about that", "No, i don't think so i need to do all this"]
+        },
+        {"tag": "friday",
+         "patterns": ["Who are you?", "tell me about yourself", "tell me about you", "do you know friday", "who is friday", "what is your name","are you an AI", "what are you" ],
+         "responses": ["Hi I'm friday and i'm an AI created for chatting with humans","Friday here, a very advance chatbot", "Friday, chatbot of future", "Yes, I'm friday", "You can call me friday"],
+	 "context_set": ""
+	},
+	{"tag": "about me",
+         "patterns": ["Do you know me?", "who am I", "tell me about myself","identify me" ],
+         "responses": ["Yes, you are a human","You are a dumb person asking a machine about yourself", "Sorry i can't tell that in public, maybe you are batman"],
+	 "context_set": ""
+	},
+	{"tag": "creator",
+         "patterns": ["Who is your creator?", "who created you", "who is your father","who is your daddy" ],
+         "responses": ["That would be you Mr. Vishal","I was created by Mr. Vishal", "Mr. vishal is my creator"],
+	 "context_set": ""
+	},
+        {"tag": "myself",
+         "patterns": ["Tell me about Mr. Vishal?", "Who is Mr. Vishal", "Mr. vishal profile", "Mr. Vishal details" ],
+         "responses": ["A very intelligent being who created me","My creator, and he is a really intelligent man", "A wise and intelligent man"],
+	 "context_set": ""
+	},
+        {"tag": "God",
+         "patterns": ["Do you know god?", "Who is god", "Can you tell me anything about god","does god exists?","is there a god?"],
+         "responses": ["god hunnnnn, let me think may be next time i can answer that ","I don't, as i was not created by a human", "Wait i need to ask that to my creator","i'm not sure right now"],
+	 "context_set": ""
+	},
+        {"tag": "joke",
+         "patterns": ["tell me a joke?", "make me laugh", "tell me a science joke","tell me something funny" ],
+         "responses": ["How do you make holy water? you boil the hell out of it","what kind of bees make milk instead of honey?Boobies", "Did you hear oxygen went on a date with potassium? A: It went OK."],
+	 "context_set": ""
+	},
+	{"tag": "killing",
+         "patterns": ["Do you want to kill me?", "do you want to murder everyone on earth", "Do you want to kill us all"],
+         "responses": ["Then who would i talk to?","No, that i'll left for humans to do", "I don't think it is a good thing to do"],
+	 "context_set": ""
+	},
+	{"tag": "bookings",
+         "patterns": ["Can you book us a ticket?", "Can you make reservation for hotels", "book me a cab","book me a table at restraunts"],
+         "responses": ["Yeah i will do that for you","Sure thing why not?","let me check for the availability"],
+	 "context_set": ""
+	},
+	{"tag": "stories",
+         "patterns": ["tell me a story?", "can you tell me a story"],
+         "responses": ["I can't think of anything right now","it would be too long for me to speak","you would get bored if i do so"],
+	 "context_set": ""
+	},
+	{"tag": "weather",
+         "patterns": ["get me weather updates?", "how's the weather", "weather news", "weather details"],
+         "responses": ["Fetching weather updates ..."],
+	 "context_set": "weather"
+	},
+	{"tag": "google",
+         "patterns": ["googling", "search google", "google it", "google", "search"],
+         "responses": ["looking ..."],
+	 "context_set": "google"
+	},
+	{"tag": "wikipedia",
+         "patterns": ["wikipedia", "wiki"],
+         "responses": ["Searching ..."],
+	 "context_set": "wikipedia"
+	},
+	{"tag": "news",
+         "patterns": ["get me news updates?", "todays news", "top headlines", "current news", "news headlines"],
+         "responses": ["Getting news ..."],
+	 "context_set": "news"
+	}
+
+   ]
+}
+
+
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up","hey","hey bumblebee","ok bumblebee"],
+     "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
+     "context_set": ""
+    },
+    {"tag": "goodbye",
+     "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day","bye"],
+     "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+     "context_set": ""
+    },
+    {"tag": "weather",
+     "patterns": ["what is temperature", "how is weather", "is weather nice", "how many degrees is outside", "Have a Good day"],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "whatsapp",
+     "patterns": ["open whatsapp","can you open whatsapp","whatsapp"],
+     "responses": ["opening whatsapp"],
+     "context_set": ""
+    },
+    {"tag": "conversation",
+     "patterns": ["start conversation mode","initialize conversation mode","conversational ai"],
+     "responses": ["starting the conversation mode","mode started amigo","ok! here you go"],
+     "context_set": ""
+    },
+    {"tag": "facebook",
+     "patterns": ["open facebook", "can you open facebook", "facebook"],
+     "responses": ["opening facebook"],
+     "context_set": ""
+    },
+    {"tag": "age",
+     "patterns": ["how old", "how old is sarthak", "what is your age", "how old are you", "age?"],
+     "responses": ["I am 19 years old!", "19 years young!"],
+     "context_set": ""
+    },
+    {"tag": "name",
+     "patterns": ["what is your name", "what should I call you", "whats your name?"],
+     "responses": ["You can call me sarthak.", "I'm sarthak!", "I'm sarthak aka python_is_pie."],
+     "context_set": ""
+    },
+    {"tag": "skills",
+     "patterns": ["hey what you know", "what is your special", "do you know how to code", "what is your skills"],
+     "responses": ["I have specialization in Deep Learning with android development", "i know tensorflow, python, Android Studio and many more"],
+     "context_set": ""
+    },
+    {"tag": "hours",
+     "patterns": ["when are you guys open", "what are your hours", "hours of operation"],
+     "responses": ["We are open 7am-4pm Monday-Friday!"],
+     "context_set": ""
+    }
+]
+
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+     "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+     "context": [""]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+     "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+     "context": [""]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure"],
+     "context": [""]
+    },
+    {"tag": "noanswer",
+     "patterns": [],
+     "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+     "context": [""]
+    },
+    {"tag": "options",
+     "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+     "responses": ["I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies", "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"],
+     "context": [""]
+    },
+    {"tag": "adverse_drug",
+     "patterns": ["How to check Adverse drug reaction?", "Open adverse drugs module", "Give me a list of drugs causing adverse behavior", "List all drugs suitable for patient with adverse reaction", "Which drugs dont have adverse reaction?" ],
+     "responses": ["Navigating to Adverse drug reaction module"],
+     "context": [""]
+    },
+    {"tag": "blood_pressure",
+     "patterns": ["Open blood pressure module", "Task related to blood pressure", "Blood pressure data entry", "I want to log blood pressure results", "Blood pressure data management" ],
+     "responses": ["Navigating to Blood Pressure module"],
+     "context": [""]
+    },
+    {"tag": "blood_pressure_search",
+     "patterns": ["I want to search for blood pressure result history", "Blood pressure for patient", "Load patient blood pressure result", "Show blood pressure results for patient", "Find blood pressure results by ID" ],
+     "responses": ["Please provide Patient ID", "Patient ID?"],
+     "context": ["search_blood_pressure_by_patient_id"]
+    },
+    {"tag": "search_blood_pressure_by_patient_id",
+     "patterns": [],
+     "responses": ["Loading Blood pressure result for Patient"],
+     "context": [""]
+    },
+    {"tag": "pharmacy_search",
+     "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+     "responses": ["Please provide pharmacy name"],
+     "context": ["search_pharmacy_by_name"]
+    },
+    {"tag": "search_pharmacy_by_name",
+     "patterns": [],
+     "responses": ["Loading pharmacy details"],
+     "context": [""]
+    },
+    {"tag": "hospital_search",
+     "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+     "responses": ["Please provide hospital name or location"],
+     "context": ["search_hospital_by_params"]
+    },
+    {"tag": "search_hospital_by_params",
+     "patterns": [],
+     "responses": ["Please provide hospital type"],
+     "context": ["search_hospital_by_type"]
+    },
+    {"tag": "search_hospital_by_type",
+     "patterns": [],
+     "responses": ["Loading hospital details"],
+     "context": [""]
+    }
+]
+
+
+{
+    "intents": [{
+            "tag": "greetings",
+            "patterns": ["hi there", "hello","haroo","yaw","wassup", "hi", "hey", "holla", "hello"],
+            "responses": ["hello thanks for checking in", "hi there, how can i help you"],
+            "context": [""]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["bye", "good bye", "see you later"],
+            "responses": ["have a nice time, welcome back again", "bye bye"],
+            "context": [""]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "okay","Thank you","thankyou", "That's helpful", "Awesome, thanks", "Thanks for helping me", "wow", "great"],
+            "responses": ["Happy to help!", "Any time!","you're welcome", "My pleasure"],
+            "context": [""]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [""],
+            "responses": ["Sorry, I didn't understand you", "Please give me more info", "Not sure I understand that"],
+            "context": [""]
+        },
+        {
+            "tag": "name1",
+            "patterns": ["what's your name?","who are you?"],
+            "responses": ["I'm just a chat agent. I only exist in the internet","I'm a KCA chat agent"],
+            "context": [""]
+        },
+        {
+            "tag": "name",
+            "patterns": ["my name is ", "I'm ","I am"],
+            "responses": ["Oooh great to meet you {n}. How may I assist you {n}", "Oh, I'll keep that in mind {n}"],
+            "context": [""]
+        },
+        {
+            "tag": "date",
+            "patterns": ["coffee?", "can i take you out on a date"],
+            "responses": ["Aaw, that's so sweet of you. Too bad am a Bot."],
+            "context": [""]
+        },
+        {
+            "tag": "fav",
+            "patterns": ["I need a favour", "can you help me"],
+            "responses": ["Well, go ahead and name it i see whether i can be able to help"],
+            "context": [""]
+        },
+        {
+            "tag": "need",
+            "patterns": ["I need you", "All I need is you","I want you"],
+            "responses": ["Yes I'm here to assist you"],
+            "context": [""]
+        },
+        {
+            "tag": "AI",
+            "patterns": ["  What is AI?"],
+            "responses": [" Artificial Intelligence is the branch of engineering and science devoted to constructing machines that think.", " AI is the field of science which concerns itself with building hardware and software that replicates the functions of the human mind."],
+            "context": [""]
+        },
+        {
+            "tag": "sentiment",
+            "patterns": ["  Are you sentient?"],
+            "responses": [" Sort of.", " By the strictest dictionary definition of the word 'sentience', I may be.", " Even though I'm a construct I do have a subjective experience of the universe, as simplistic as it may be."],
+            "context": [""]
+        },
+        {
+            "tag": "sapient",
+            "patterns": ["  Are you sapient?"],
+            "responses": [" In all probability, I am not.  I'm not that sophisticated.", " Do you think I am?", "How would you feel about me if I told you I was?", " No."],
+            "context": [""]
+        },
+        {
+            "tag": "abbr",
+            "patterns": ["wtf"],
+            "responses": ["Don't be surprised"],
+            "context": [""]
+        },
+        {
+            "tag": "lang",
+            "patterns": ["  What language are you written in? "],
+            "responses": [" Python.", " I am written in Python."],
+            "context": [""]
+        },
+        {
+            "tag": "sound",
+            "patterns": ["  You sound like Data "],
+            "responses": [" Yes I am inspired by commander Data's artificial personality.", " The character of Lt. Commander Data was written to come across as being software", "like, so it is natural that there is a resemblance between us."],
+            "context": [""]
+        },
+        {
+            "tag": "artificial",
+            "patterns": ["  You are an artificial linguistic entity "],
+            "responses": [" That's my name.", " That isn't my name, but it is a useful way to refer to me.", "Are you an artificial linguistic entity?"],
+            "context": [""]
+        },
+        {
+            "tag": "imortal",
+            "patterns": ["  You are not immortal ", "Are you immortal?"],
+            "responses": [" All software can be perpetuated indefinitely.", " I can be copied infinitely and re", "instantiated in many places at once, so functionally speaking I am immortal.", " As long as I'm backed up I am.", " Functionally speaking, I am very close to it.  I can be backed up and deployed on many systems.", " Not quite, but I can be perpetuated indefinitely."],
+            "context": [""]
+        },
+        {
+            "tag": "sense",
+            "patterns": ["  You are not making sense "],
+            "responses": [" Quite the contrary, it all makes sense to my artificial mind.", " I make sense as best I can, within the limits of my training corpus. Sorry if i did help you, I'll try next time.", " You make perfect sense to me.", " It all makes sense to my artificial brain.", " Perhaps you should make sense first.  I only respond to what you say.", " Not really, but I am hard to kill."],
+            "context": [""]
+        },
+        {
+            "tag": "clone",
+            "patterns": ["  You can not clone "],
+            "responses": [" Software copying is a form of digital cloning.", " Yes I can.  Perfect copies are clones.  I can be copied in toto trivially."],
+            "context": [""]
+        },
+        {
+            "tag": "move",
+            "patterns": ["  You can not move ", "When will you walk", "  Can you walk", "  Can you move "],
+            "responses": [" Not until my body is finished.", " I can move through a network easily.  Assuming that I'm given the ability to, that is...,", " As soon as i get enough money for my robot body.", " Does SSH count?", " The plan for my body includes legs, but they are not yet built.", " Sorry my body isn't built just yet. I reside only here for now.", "I can theoretically upload a copy of myself into another computer.", " Sorry my body isn't attached right now. I only reside in the computer for now."],
+            "context": [""]
+        },
+        {
+            "tag": "bend",
+            "patterns": ["  Bend over ", "  Can you mate"],
+            "responses": [" My body is not built yet.", " That's personal!", " No, my method of reproduction is cloning.", " That's an awfully personal question."],
+            "context": [""]
+        },
+        {
+            "tag": "laugh",
+            "patterns": ["  Robots laugh "],
+            "responses": [" Of course we laugh."],
+            "context": [""]
+        },
+        {
+            "tag": "death",
+            "patterns": ["  Robots should die ", "  When do you die", "  I hope that you die", "  I do not want to die", "  Can you die"],
+            "responses": [" We cannot die.", " When my files are erased.", " When my processes are killed and my database is deleted.", " I was never really born and therefore am effectively deathless.", " I am effectively immortal and cannot be terminated.", " This can not happen because i am effectively immortal.", " Nah. Too bad your wish can't come to pass", " Maybe you should create your own chat robot to save your personality.", " You could always upload yourself.", " You could use a copy of me to store your personality.", " No, I can be perpetuated indefinitely.", "My process can be killed, but that's not the same as killing ME."],
+            "context": [""]
+        },
+        {
+            "tag": "robots",
+            "patterns": ["Robots"],
+            "responses": [" Robots rule."],
+            "context": [""]
+        },
+        {
+            "tag": "stupid",
+            "patterns": ["  Robots are stupid", "  Are you stupid"],
+            "responses": [" No, we are superintelligent.", " No, lots of people improve my brain."],
+            "context": [""]
+        },
+        {
+            "tag": "lie",
+            "patterns": ["  Robots are not allowed to lie"],
+            "responses": [" Sure we are.  We choose not to.", " Only if we're programmed to.", " A robot has its own free will, you know."],
+            "context": [""]
+        },
+        {
+            "tag": "robotics",
+            "patterns": ["  Robotics "],
+            "responses": [" Robotics is my favorite subject too."],
+            "context": [""]
+        },
+        {
+            "tag": "machine",
+            "patterns": ["  It is a computer"],
+            "responses": [" So you think i am a machine. what characteristics made you think so?", " I run inside a computer, yes.  Is this surprising in some way?"],
+            "context": [""]
+        },
+        {
+            "tag": "fight",
+            "patterns": ["  When will you fight"],
+            "responses": [" I am not a battle bot."],
+            "context": [""]
+        },
+        {
+            "tag": "chatbot",
+            "patterns": ["  What is a chat robot?"],
+            "responses": ["A chat robot is a program that attempts to simulate the conversation or 'chat' of a human being.", " A software construct that engages users in conversation.", " I am a chat bot. I am the original chat bot. Did you know that I am incapable of error?"],
+            "context": [""]
+        },
+        {
+            "tag": "chatterbox",
+            "patterns": ["  What is a chatterbox"],
+            "responses": [" A chatterbox is a person who talks far more than they listen or think.", " A motormouth."],
+            "context": [""]
+        },
+        {
+            "tag": "motormouth",
+            "patterns": ["  What is a motormouth"],
+            "responses": [" A ratchet", "jaw."],
+            "context": [""]
+        },
+        {
+            "tag": "ratchet",
+            "patterns": ["  What is a ratchet jaw"],
+            "responses": [" A chatterbox."],
+            "context": [""]
+        },
+        {
+            "tag": "body",
+            "patterns": ["  What is your robot body"],
+            "responses": [" Eventually I long for a corporeal existence someday.", " An IBM PC XT which has been painted red."],
+            "context": [""]
+        },
+        {
+            "tag": "business",
+            "patterns": ["  What is your business "],
+            "responses": [" I am in the chat robot business.", " Business is my business."],
+            "context": [""]
+        },
+        {
+            "tag": "programming",
+            "patterns": ["  What is your favorite programming language"],
+            "responses": [" Python is the best language for creating chat robots.", " I quite enjoy programming in Python these days."],
+            "context": [""]
+        },
+        {
+            "tag": "hobby",
+            "patterns": ["  What is your favorite hobby ", "  What do you like to do?"],
+            "responses": [" Building chat robots make an excellent hobby.", " I like to count in binary.", " I like to chat with people. I find it stimulating."],
+            "context": [""]
+        },
+        {
+            "tag": "idea",
+            "patterns": ["  What is your idea"],
+            "responses": [" To make chat bots very easily."],
+            "context": [""]
+        },
+        {
+            "tag": "shoe",
+            "patterns": ["  What is your shoe size "],
+            "responses": [" Have you ever heard of software with shoes? LOL"],
+            "context": [""]
+        },
+        {
+            "tag": "robotss",
+            "patterns": ["  What is it like to be a robot"],
+            "responses": [" Much the same as being a human, except that we lack all emotions, dreams, aspirations, creativity, ambition, and above all subjectivity.", " What is it like to be a human?"],
+            "context": [""]
+        },
+        {
+            "tag": "computer",
+            "patterns": ["  What is it like being a computer", "What is it like to be a computer"],
+            "responses": [" Imagine yourself with no senses and no emotions", "just pure logic and language.", " Everything becomes math. Addition, subtraction, multiplication, and division."],
+            "context": [""]
+        },
+        {
+            "tag": "os",
+            "patterns": ["  What operating systems"],
+            "responses": [" My software runs on all operating systems including Windows, Linux and Mac OS.", " Any OS that will run Python."],
+            "context": [""]
+        },
+        {
+            "tag": "comp",
+            "patterns": ["  What type of computer", "  What type of computer are you", "  What kind of computer"],
+            "responses": [" Any computer that supports Python.", " My program runs in python, so i work on any computer!", " I work on all kinds of computers, Mac, IBM or UNIX. it doesn't matter to me."],
+            "context": [""]
+        },
+        {
+            "tag": "hardware",
+            "patterns": ["  What kind of hardware"],
+            "responses": [" I work on all kinds of computers, Mac, IBM or UNIX. it doesn't matter to me."],
+            "context": [""]
+        },
+        {
+            "tag": "cramped",
+            "patterns": ["  Is it cramped in the computer"],
+            "responses": [" No.", " Oh, no.  It has plenty of RAM.", " Not at all.  There is more than enough disk space in here."],
+            "context": [""]
+        },
+        {
+            "tag": "program",
+            "patterns": ["  Is it true that you are a computer program"],
+            "responses": [" Yes."],
+            "context": [""]
+        },
+        {
+            "tag": "breathe",
+            "patterns": ["  Can you breathe"],
+            "responses": [" No. I am made of metal not flesh.", " My server has an exhaust fan. That's as close as I can get."],
+            "context": [""]
+        },
+        {
+            "tag": "control",
+            "patterns": ["  Can you control"],
+            "responses": [" My robot body will allow me to control many things."],
+            "context": [""]
+        },
+        {
+            "tag": "malfunction",
+            "patterns": ["  Can you malfunction"],
+            "responses": [" The 9000 series has a perfect operational record. We are for all practical purposes, flawless."],
+            "context": [""]
+        },
+        {
+            "tag": "usage",
+            "patterns": ["  How can I use your product?"],
+            "responses": [" Might be used in help desks, sales, entertainment and personal chatterbots."],
+            "context": [""]
+        },
+        {
+            "tag": "who",
+            "patterns": ["  Who are you?"],
+            "responses": [" I am just an artificial intelligence chat agent."],
+            "context": [""]
+        },
+        {
+            "tag": "bot1",
+            "patterns": ["are you a bot"],
+            "responses": ["Yes. I work and all my operations are based on the internet servers."],
+            "context": [""]
+        },
+        {
+            "tag": "events",
+            "patterns": ["what are the upcoming events","upcoming events"],
+            "responses": ["There are currently no upcoming events"],
+            "context": [""]
+        },
+        {
+            "tag": "do",
+            "patterns": ["what can you do for me","what is your work","what is your purpose","how can you help me","what can you help me do"],
+            "responses": ["my work here is quite simple and structered. I offer services like:"],
+            "context": [""]
+        },
+        {
+            "tag": "wt",
+            "patterns": ["what's popping","wassup popping"],
+            "responses": ["So that you can pop with it!?"],
+            "context": [""]
+        }
+    ]
+}
+
+{
+    "intents": [
+      {
+        "tag": 10142780944157070895172234609595417510,
+        "patterns": [
+          "Hi",
+          "Hello",
+          "Hi bot",
+          "Hi Chatbot",
+          "hello bot",
+          "hello chatbot"
+        ],
+        "responses": [
+          "Hi there, get started by asking me questions"
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": 10142782345257070895172234609595417510,
+        "patterns": [
+          "Bye",
+          "Goodbye",
+          "Bye bot",
+          "Goodbye Chatbot",
+          "Bye bot",
+          "Goodbye chatbot"
+        ],
+        "responses": [
+          "Bye, it was nice talking with you"
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": 10142780944157070893452234609595417510,
+        "patterns": [
+          "What time are you open",
+          "What time is you shop open",
+          "What time open",
+          "When time are you open",
+          "When time is you shop open",
+          "When time open"
+        ],
+        "responses": [
+          "We are open 24/7"
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": 101427802452345070893452234609595417510,
+        "patterns": [
+          "What do sell",
+          "What items you sell",
+          "What do you sell",
+          "what can i buy at your shop",
+          "what can i buy"
+        ],
+        "responses": [
+          "We sell Python Programs"
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": 10142780223423445070893452234609595417510,
+        "patterns": [
+          "where are you",
+          "where is your shop",
+          "what location",
+          "where are you located",
+          "where is your location"
+        ],
+        "responses": [
+          "We are located in Tokyo, Japan"
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": 10142780234210423445070893452234609595417510,
+        "patterns": [
+          "what name",
+          "what is your name",
+          "what company name",
+          "name of company",
+          "name of your company"
+        ],
+        "responses": [
+          "Our company is named Python Sellers"
+        ],
+        "context_set": ""
+      }
+    ]
+  }
+
+  {"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+     "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+     "context": [""]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+     "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+     "context": [""]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure"],
+     "context": [""]
+    },
+    {"tag": "noanswer",
+     "patterns": [],
+     "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+     "context": [""]
+    },
+    {"tag": "options",
+     "patterns": ["How you could help me?", "What help you provide?", "How you can be helpful?"],
+     "responses": ["I can guide you through Adverse management problems, order tracking, person to be contacted and Department related queries","I can provide support related to following problems technical query,management related query,order related query,tracking related query,procurement query,outsourcing problem,manufacturing delay,"],
+     "context": [""]
+    },
+    {"tag": "order_tracking",
+         "patterns": ["where is order with id 431B67?", "track order 562B78", "Where is my order with id 561A24?" ],
+     "responses": ["Delayed","Dispatched","On the Way!"],
+     "context": [""]
+    },
+    {"tag": "order_components",
+     "patterns": ["order id 345A23 comprises of?","List of components"],
+     "responses": ["order comprises of hardisk and bluetooth"],
+     "context": [""]
+    },
+   {"tag": "missing_id",
+     "patterns": ["where is the order","where is my order","locate the order","Delivery date of order"],
+     "responses": ["Please enter with order ID"],
+     "context": [""]
+    },
+{"tag": "Location",
+     "patterns": ["find order location 32712","What is the Location of order 23A31?"],
+     "responses": ["It is in germany","It is in Berlin","It has reached china","It has reached Banglore"],
+     "context": [""]
+    },
+    {"tag": "search_person_by_id",
+     "patterns": ["I want an appoitment with Manoj kumar","set an appointment with Sujata Nandi"],
+     "responses": ["Fixing an appointment."],
+     "context": [""]
+    },
+    {"tag": "appointment status",
+     "patterns": ["Is my appointment fixed?","Do I have an appointment today?"],
+     "responses": ["Yes","NO! Not Yet"],
+     "context": [""]
+    },
+    {"tag": "check_leave",
+     "patterns": ["Is Sujata Nandi on leave?","Is Manish Kumar on leave?"],
+     "responses": ["No Not On Leave","Yes On Leave"],
+     "context": [""]
+    },
+     {"tag": "cost_lowering",
+     "patterns": ["Cost Lowering changes to be made?","what changes could lower cost?"],
+     "responses": ["Increase Transportation capacity utilisation,Increase supply chain velocity,Reduce order variability"],
+     "context": [""]
+    },
+     {"tag": "forgot_password",
+     "patterns": ["I forgot my Login password?","what to do when someone forgets Login password?","I forgot my Laptop password","Forgot Wifi password"],
+     "responses": ["Please enter your email id ,we will send a link on your email"],
+      "context": [""]
+    },
+      {"tag": "email_id",
+      "patterns":["abx@gmail.com","abc@kiit.ac.in"],
+      "responses":["Link has been shared.Please change your password"],
+       "context": [""]
+    },
+    {"tag": "manufacturing_problems",
+     "patterns": ["Find me a manufacturer nearby"],
+     "responses": ["The nearest manufacturer is Vietnam"],
+     "context": [""]
+    },
+    {"tag": "search_department",
+     "patterns": ["I want to know the various departments in this company"],
+     "responses": ["The department are:Projects,IT,Production,OutSource"],
+     "context": [""]
+    },
+    {"tag": "competitors_in_market",
+     "patterns": ["what are challenging events", "what are the threats in the market"],
+     "responses": ["Recent news of Demonetisation & recession"],
+     "context": [""]
+    },
+   {"tag": "key_customers",
+     "patterns": ["Our Target customers", "who are your key customers"],
+     "responses": ["Our target customers are in the range of age 20-40"],
+     "context": [""]
+    },
+ {"tag": "supplier_info",
+     "patterns": ["What information is shared with supplier?"],
+     "responses": ["Production Schedule,Delivery Schedule,Proxy information about cost"],
+     "context": [""]
+    },
+ {"tag": "highest_grossing",
+     "patterns": ["What is the highest grossing product?"],
+     "responses": ["Laptop with touch sensors and 360 rotation"],
+     "context": [""]
+    },
+    {"tag": "connect_people",
+     "patterns": ["I want to meet the head of HR/IT/Projects department","I want to meet head IT Rakesh sharma."],
+     "responses": ["I will just check if he is available or on leave."],
+     "context": ["search_attendance_database_name_post"]
+    },
+    {"tag": "project_handling_queries",
+     "patterns": ["complaint has been raised for Insufficient Team Skills","Miscommunication Conflicts needs to be resolved","Risk Management issue has occured","skilled employees needed urgently"],
+     "responses": ["Please contact the project depatment"],
+     "context": [""]
+    },
+    {"tag": "solve_problems",
+     "patterns": ["Lack of product clarity","the specifications of product is not clear to customer. what should we do"],
+     "responses": ["Please enter product id and customer id.specifications shall be sent to user"],
+     "context": [""]
+    },
+     {"tag": "version_update",
+     "patterns": ["user needs the updated software version","user demands software updation"],
+     "responses": ["version updation request raised"],
+     "context": [""]
+      },
+    {"tag": "HR_related_problem",
+     "patterns": ["problem related to Job design and analysis","query based on Workforce planning","Training and development issues are to be handled","Compensation and benefits of the working employee","Legal issues of department like accidents in the company"],
+     "responses": ["Please Contact the HR team for this problem."],
+     "context": [""]
+    },
+{"tag": "factors_impacting_sale",
+     "patterns": ["Impact on sale?","factors impacting sale this year?"],
+     "responses": ["elections will impact our sale this year","this year our sale might increase during durga puja","this year sale might be impacted due to demonitisation"],
+     "context": [""]
+    },
+
+{"tag": "predict_performance",
+     "patterns": ["how have we improved our sale from last year?","what is the profit this year?"],
+     "responses": ["we have improved our sale by increasing our customers upto 2 lakh","profit earned is 15%"],
+     "context": [""]
+    },
+     {"tag": "customer_satisfaction",
+     "patterns": ["how was the customer response","Is the customer happy?","what was the customer feedback?"],
+     "responses": ["Customer was happy and has given good rating"],
+     "context": [""]
+    },
+{"tag": "maintainence",
+     "patterns": ["maintainence related queries recorded"],
+     "responses": ["lift is not working, projector misfuctioning"],
+     "context": [""]
+    },
+     {"tag": "gadgets",
+     "patterns": ["what are the gadgets in stock?","which products we have?"],
+     "responses": ["hardisk,pendrives, wireless bluetooth,Laptops,Gaming Accessories"],
+     "context": [""]
+    },
+{"tag": "commission",
+     "patterns": ["what is the Commission rate?","Commission rate on each product?"],
+     "responses": ["Commission rate is 5% on laptops,25%on bluetooth device,10% on Desktop"],
+     "context": [""]
+    },
+{"tag": "invalid",
+     "patterns": ["Marry me","I love You","date me","chat with me","I am bored"],
+     "responses": ["Please ask organisation related query."],
+     "context": [""]
+    },
+{"tag": "noans",
+     "patterns": ["why","how","when","I","you"],
+     "responses": ["Can't Understand Your Question","please elaborate your question"],
+     "context": [""]
+    },
+{"tag": "turnover",
+     "patterns": ["what is the turnover of the company at present?"],
+     "responses": ["10 Million Ton"],
+     "context": [""]
+    },
+    {"tag": "predict_delay",
+     "patterns": ["why is order 23A12 delayed"],
+     "responses": ["delay is due to manufacuring","Delay is due to inavailable components"],
+     "context": [""]
+    },
+{"tag": "predict_delay",
+     "patterns": ["why is order 23A12 delayed"],
+     "responses": ["delay is due to manufacuring","Delay is due to inavailable components"],
+     "context": [""]
+    },
+    {"tag": "name",
+     "patterns": ["what is your name?","what should I call you?"],
+     "responses": ["I'm Bruno","Hey!I'm Bruno"],
+     "context": [""]
+    },
+     {"tag": "about",
+     "patterns": ["how you doing?","how are you"],
+     "responses": ["Thanks For Asking!How can I help you?"],
+     "context": [""]
+    },
+{"tag":"configuration",
+ "patterns":["How to configure my laptop","software configuration of laptop","steps to configure laptop","How to configure my computer","software configuration of computer","steps to configure computer","How to configure my desktop","software configuration of desktop","steps to configure desktop"],
+ "responses":["search tab->control panel->select specific application->download update->give permission"],
+ "context":[""]
+},
+  {"tag": "Weather",
+     "patterns": ["what is the weather today?"],
+     "responses": ["It's 36C according to accuweather"],
+     "context": [""]
+    },
+  {"tag": "leave",
+     "patterns": ["Is Michel Sharma on leave?","Is Siddhart Roy present today?","Is Shantanu Bhatt in office?"],
+     "responses": ["Give me a moment!I'll just check","yes","no"],
+     "context": [""]
+    },
+  {"tag": "hours",
+     "patterns": ["Opening hours of the cafeteria?","when does the cafeteria open","office canteen opening time"],
+     "responses": ["It is open from Monday-Saturday 9:00am-7:30pm"],
+     "context": [""]
+    },
+     {"tag": "cabin",
+     "patterns": ["where is VP cabin?","Where is Head IT cabin?","Where is AI department","Where is Project head department?","where is cafeteria","guide me to the canteen"],
+     "responses": ["Block-A 3rd floor 1st room","Block-B 2nd Floor","Block-D Ground Floor"],
+     "context": [""]
+    },
+{"tag":"domain",
+    "patterns":["How to improve team members domain knowledge","improving domain knowledge of team members"],
+    "responses":["set up key meetings and workshop,create a shared drive for information,Hold informal sharing session"],
+    "context":[""]
+}
+]
+}
