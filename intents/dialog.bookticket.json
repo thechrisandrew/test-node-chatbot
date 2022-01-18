@@ -1,0 +1,13 @@
+{
+	"questions": [
+		"Can you book us a ticket?",
+		"Can you make a reservation for hotel?",
+		"Book me a cab",
+		"Book me a table at the restaurant"
+	],
+	"answers": [
+		"Yeah I will do that for you",
+		"Sure thing why not?",
+		"Let me check for the availability"
+	]
+}
