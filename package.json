@@ -4,13 +4,16 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"train": "node train.js"
+		"train": "node train.js",
+		"start": "nodemon main.js"
 	},
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"ejs": "^3.1.6",
 		"express": "^4.17.2",
 		"node-nlp": "^4.22.9",
-		"socket.io": "^4.4.1"
+		"socket.io": "^4.4.1",
+		"ws": "^8.4.2"
 	}
 }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Alice</title>
+		<link rel="stylesheet" href="./main.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>ALICE - ChatBot</h1>
+			<pre id="messages"></pre>
+			<input
+				type="text"
+				id="messageBox"
+				placeholder="Type your messages here"
+			/>
+			<button id="send" title="Send Message!">Send Message</button>
+		</div>
+
+		<script
+			src="https://cdn.socket.io/4.4.1/socket.io.min.js"
+			integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H"
+			crossorigin="anonymous"
+		></script>
+		<script>
+			var socket = io();
+
+			socket.on("message", (data) => {
+				showMessage(`Alice: ${String(data)}`);
+			});
+
+			const sendBtn = document.querySelector("#send");
+			const messages = document.querySelector("#messages");
+			const messageBox = document.querySelector("#messageBox");
+
+			function showMessage(message) {
+				messages.textContent += `\n\n${message}`;
+				messages.scrollTop = messages.scrollHeight;
+				messageBox.value = ``;
+			}
+
+			sendBtn.onclick = function () {
+				if (!io) {
+					showMessage("WebSocket Connection Failed!");
+					return;
+				}
+
+				socket.emit("message", messageBox.value);
+				showMessage(`You: ${messageBox.value}`);
+			};
+
+			messageBox.addEventListener("keyup", function (event) {
+				if (event.keyCode === 13) {
+					event.preventDefault();
+					sendBtn.click();
+				}
+			});
+		</script>
+	</body>
+</html>

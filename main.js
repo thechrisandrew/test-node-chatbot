@@ -1,43 +1,37 @@
-// Initialize Express
 const express = require("express");
 const app = express();
+app.set("view engine", "ejs");
+app.use(express.static(__dirname + "/public"));
 
-app.get("/", function (req, res) {
-	res.sendFile(__dirname + "/index.html");
-});
+const http = require("http");
+const server = http.createServer(app);
+const io = require("socket.io")(server, { cors: { origin: "*" } });
 
-app.listen(80, () => {
-	console.log(`Express server listening on port: 80`);
-});
-
-// Initialize NLP
 const { NlpManager } = require("node-nlp");
 console.log("Starting Chatbot ...");
-
 const manager = new NlpManager({ languages: ["en"] });
 manager.load();
 
-// Initalize WebSocket
-const { WebSocketServer } = require("ws");
+// serve index.html
+app.get("/", (req, res) => {
+	res.render("index");
+});
 
-const wss = new WebSocketServer({ port: 8000 });
-console.log("Alice listening on port: 8000");
+io.on("connection", (socket) => {
+	var clientIp = socket.request.connection.remoteAddress;
+	console.log(clientIp);
+	socket.emit("message", "Connected Successfully");
 
-wss.on("connection", function connection(ws, req) {
-	const ip = req.socket.remoteAddress;
-	console.log(`Received connection from: ${ip}`);
-	ws.send("Connection established successfully!");
-
-	ws.on("message", async function message(data) {
+	socket.on("message", async (data) => {
 		const response = await manager.process("en", String(data));
 		if (!response.answer) {
-			ws.send("Sadly, I'm still too dumb to understand that...");
+			socket.emit("message", "Sadly, I'm still too dumb to understand that...");
 		} else {
-			ws.send(response.answer);
+			socket.emit("message", response.answer);
 		}
 	});
+});
 
-	ws.on("close", function close() {
-		console.log("disconnected");
-	});
+server.listen(3000, () => {
+	console.log("Server listening on *:3000");
 });
