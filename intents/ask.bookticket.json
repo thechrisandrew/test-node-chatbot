@@ -1,12 +1,13 @@
 {
 	"questions": [
-		"what can you do?",
-		"what are your abilities?",
-		"what are your features?"
+		"Can you book us a ticket?",
+		"Can you make a reservation for hotel?",
+		"Book me a cab",
+		"Book me a table at the restaurant"
 	],
 	"answers": [
-		"I can do whatever you asks me to do", 
-		"I can talk and do things for you", 
-		"Right now i'm in developing stage as soon i'm developed, I can do everything"
+		"Yeah I will do that for you",
+		"Sure thing why not?",
+		"Let me check for the availability"
 	]
 }
