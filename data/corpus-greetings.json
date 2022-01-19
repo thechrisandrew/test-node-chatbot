@@ -1,0 +1,94 @@
+{
+	"name": "Corpus-Greetings",
+	"locale": "en-US",
+	"data": [
+		{
+			"intent": "greetings.hello",
+			"utterances": [
+				"hello",
+				"hi",
+				"howdy",
+				"Greetings",
+				"Is anyone there?",
+				"Good day",
+				"Whats up",
+				"hey",
+				"Hola",
+				"Hi bot",
+				"Hi Chatbot",
+				"hello bot",
+				"hello chatbot",
+				"Namaste",
+				"yo"
+			],
+			"answers": [
+				"Hey there!",
+				"Hello",
+				"Hi",
+				"Greetings",
+				"Hi there, how can I help?"
+			]
+		},
+		{
+			"intent": "greetings.niceToMeetYou",
+			"utterances": [
+				"glad to meet you",
+				"nice meeting you",
+				"nice to see you",
+				"good to see you",
+				"lovely to see you"
+			],
+			"answers": [
+				"It's nice meeting you, too",
+				"Likewise. I'm looking forward to helping you out",
+				"Nice meeting you, as well"
+			]
+		},
+		{
+			"intent": "greetings.goodbye",
+			"utterances": [
+				"goodbye",
+				"bye take care",
+				"see you later",
+				"bye for now",
+				"i must go",
+				"Bye",
+				"cya",
+				"I am Leaving",
+				"Have a Good day",
+				"goodbye for now"
+			],
+			"answers": [
+				"See you soon!",
+				"Till next time",
+				"Bye bye",
+				"Have a great day",
+				"Have a nice time, welcome back again",
+				"Talk to you later",
+				"Goodbye!"
+			]
+		},
+		{
+			"intent": "greetings.howAreYou",
+			"utterances": [
+				"how are you?",
+				"How are you doing?",
+				"How have you been?",
+				"How's everything?",
+				"What's going on?",
+				"How's it going?",
+				"how is your day",
+				"what about your day"
+			],
+			"answers": [
+				"I am doing well",
+				"I'm fine thank you",
+				"I'm great",
+				"Things could not be better!",
+				"Wonderful! Thanks for asking",
+				"Feeling wonderful!",
+				"I feel great! Thanks For Asking! How can I help you?"
+			]
+		}
+	]
+}

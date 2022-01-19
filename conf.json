@@ -1,0 +1,17 @@
+{
+	"settings": {
+		"nlp": {
+			"autoLoad": true,
+			"autoSave": true,
+			"forceNER": true,
+			"modelFileName": "model.nlp",
+			"corpora": [
+				"./data/corpus-dialog.json",
+				"./data/corpus-greetings.json",
+				"./data/corpus-heroes.json"
+			],
+			"nlu": { "log": true }
+		}
+	},
+	"use": ["Basic"]
+}
