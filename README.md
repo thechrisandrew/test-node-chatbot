@@ -6,4 +6,3 @@
 [![Issues](https://img.shields.io/github/issues/thechrisandrew/node-chatbot.svg)](https://github.com/thechrisandrew/node-chatbot/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/thechrisandrew/node-chatbot.svg)](https://github.com/thechrisandrew/node-chatbot/pulls)
 [![License](https://img.shields.io/github/license/thechrisandrew/node-chatbot.svg)](https://github.com/thechrisandrew/node-chatbot/blob/master/LICENSE)
-![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)
