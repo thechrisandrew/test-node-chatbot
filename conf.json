@@ -8,7 +8,8 @@
 			"corpora": [
 				"./data/corpus-dialog.json",
 				"./data/corpus-greetings.json",
-				"./data/corpus-heroes.json"
+				"./data/corpus-heroes.json",
+				"./data/corpus-joke.json"
 			],
 			"nlu": { "log": true }
 		}
